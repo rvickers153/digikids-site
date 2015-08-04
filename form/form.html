@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Registration Form">
+    <meta name="author" content="Rebecca Vickers for the DigiGirls team">
+    <title>DigiGirls Code Camp</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+
+    <!-- Bootstrap -->
+
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="calendar.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+<body id="main_body" >
+	
+	<img id="top" src="DigiGirlsLogo.jpg" alt="DigiGirls Logo">
+	<div id="form_container">
+		<button type="button" class="btn btn-primary back"><a href="http://www.digigirls.org">Back to DigiGirls Site</a></button>
+		<h1><a>DigiGirls Code Camp 2015</a></h1>
+		<form id="registration_form" method="post" action="http://www.digigirls.org/form/reg_form.php" role="form" class="reg_form">
+		<div class="form_description">
+			<h2>DigiGirls Code Camp 2015</h2>
+			<p>Registration Form for 2015 Summer Code Camp</p>
+			<p>Items in red are required fields</p>
+		</div>						
+			<ul>
+				<div class="row ">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<li id="li_1" >
+							<label class="description r" for="element_1">Girl's Name</label>
+							<span>
+								<input id="element_1_1" name= "element_1_1" class="element text x-large"/>
+								<label for="element_1_1">First</label>
+							</span>
+							<span>
+								<input id="element_1_2" name= "element_1_2" class="element text x-large"/>
+								<label for="element_1_2">Last</label>
+							</span>
+						</li>
+					</div><!-- col -->
+					<div class="col-xs-8 col-sm-6 col-md-3 col-lg-4">
+						<li id="li_2" >
+							<label class="description r" for="element_2">Date of Birth </label>
+							<span>
+								<input id="element_2_1" name="element_2_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+								<label for="element_2_1">MM</label>
+							</span>
+							<span>
+								<input id="element_2_2" name="element_2_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+								<label for="element_2_2">DD</label>
+							</span>
+							<span>
+						 		<input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_2_3">YYYY</label>
+							</span>
+						
+							<span id="calendar_2">
+								<img id="cal_img_2" class="datepicker" src="calendar.gif" alt="Pick a date.">	
+							</span>
+							<script type="text/javascript">
+								Calendar.setup({
+								inputField	 : "element_2_3",
+								baseField    : "element_2",
+								displayArea  : "calendar_2",
+								button		 : "cal_img_2",
+								ifFormat	 : "%B %e, %Y",
+								onSelect	 : selectDate
+								});
+							</script>
+				 
+						</li>
+					</div><!-- col -->
+					<div class="col-xs-4 col-sm-6 col-md-2 col-lg-2">
+						<li id="li_3" >
+							<label class="description r" for="element_3">Age by 6/1/2015 </label>
+							<div>
+								<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+							</div> 
+						</li>
+					</div><!-- col -->
+				</div><!-- row -->
+				<li id="li_4" >
+					<label class="description r" for="element_4">Address </label>
+					
+					<div>
+						<input id="element_4_1" name="element_4_1" class="element text large" value="" type="text">
+						<label for="element_4_1">Street Address</label>
+					</div>
+				
+					<div>
+						<input id="element_4_2" name="element_4_2" class="element text large" value="" type="text">
+						<label for="element_4_2">Address Line 2</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_4_3" name="element_4_3" class="element text medium" value="" type="text">
+						<label for="element_4_3">City</label>
+					</div>
+				
+					<div class="right">
+						<input id="element_4_4" name="element_4_4" class="element text medium" value="" type="text">
+						<label for="element_4_4">State / Province / Region</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_4_5" name="element_4_5" class="element text medium" maxlength="15" value="" type="text">
+						<label for="element_4_5">Postal / Zip Code</label>
+					</div>
+				
+					<div class="right">
+						<select class="element select medium" id="element_4_6" name="element_4_6"> 
+							<option value="" selected="selected"></option>
+							<option value="United States" >United States</option>
+						</select>
+						<label for="element_4_6">Country</label>
+					</div> 
+				</li>
+
+				<li id="li_35" >
+					<label class="description r" for="element_35">Shirt Size <div class="note r">The cost of the t-shirt is <strong>$12.00</strong>.<br /> You may send your money in early to <br />Bobbi Montgomery at PO Box 247 Jackson, Ohio 45640<br /> or with your child on the first day of camp.</div></label>
+					<div class="row">
+						<span>
+
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">	
+							<input id="element_35_1" name="element_35_1" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_1">Youth Small</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<input id="element_35_2" name="element_35_2" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_2">Youth Medium</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<input id="element_35_3" name="element_35_3" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_3">Youth Large</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+							<input id="element_35_4" name="element_35_4" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_4">Youth XL</label>
+						</div>
+						</span>
+					</div>
+					<div class="row">
+						<span>
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<input id="element_35_5" name="element_35_5" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_5">Adult Small</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<input id="element_35_6" name="element_35_6" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_6">Adult Medium</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<input id="element_35_7" name="element_35_7" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_7">Adult Large</label>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+							<input id="element_35_8" name="element_35_8" class="element checkbox" type="checkbox" value="1" />
+							<label class="choice" for="element_35_8">Adult XL</label>
+						</div>
+						</span>
+					</div> 
+				</li>
+
+				<li id="li_5" >
+					<label class="description r" for="element_5">Parent or Guardian 1 </label>
+					<span class="left">
+						<input id="element_5_1" name= "element_5_1" class="element text x-large" maxlength="255" value=""/>
+						<label>First</label>
+					</span>
+					<span class="right">
+						<input id="element_5_2" name= "element_5_2" class="element text x-large" maxlength="255" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>
+
+				<li id="li_6" >
+					<label class="description r " for="element_6">Address </label>
+					
+					<div>
+						<input id="element_6_1" name="element_6_1" class="element text large" value="" type="text">
+						<label for="element_6_1">Street Address</label>
+					</div>
+				
+					<div>
+						<input id="element_6_2" name="element_6_2" class="element text large" value="" type="text">
+						<label for="element_6_2">Address Line 2</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_6_3" name="element_6_3" class="element text medium" value="" type="text">
+						<label for="element_6_3">City</label>
+					</div>
+				
+					<div class="right">
+						<input id="element_6_4" name="element_6_4" class="element text medium" value="" type="text">
+						<label for="element_6_4">State / Province / Region</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_6_5" name="element_6_5" class="element text medium" maxlength="15" value="" type="text">
+						<label for="element_6_5">Postal / Zip Code</label>
+					</div>
+				
+					<div class="right">
+						<select class="element select medium" id="element_6_6" name="element_6_6"> 
+						<option value="" selected="selected"></option>
+
+						<option value="United States" >United States</option>
+
+				
+						</select>
+					<label for="element_6_6">Country</label>
+					</div> 
+				</li>
+				
+				<div class="row phone">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_7" >
+							<label class="description r" for="element_7">Daytime Phone </label>
+							<span>
+								<input id="element_7_1" name="element_7_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_7_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_7_2" name="element_7_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_7_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_7_3" name="element_7_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_7_3">####</label>
+							</span>
+					 
+						</li>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_8" >
+							<label class="description" for="element_8">Home Phone </label>
+							<span>
+								<input id="element_8_1" name="element_8_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_8_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_8_2" name="element_8_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_8_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_8_3" name="element_8_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_8_3">####</label>
+							</span>
+						</li>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_9" >
+							<label class="description r" for="element_9">Cell Phone </label>
+							<span>
+								<input id="element_9_1" name="element_9_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_9_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_9_2" name="element_9_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_9_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_9_3" name="element_9_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_9_3">####</label>
+							</span>
+							 
+						</li>
+					</div>
+				</div><!-- row -->
+
+				<li id="li_10" >
+					<label class="description r" for="element_10">Email </label>
+					<div>
+						<input id="element_10" name="element_10" class="element text email" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>
+
+				<li id="li_11" >
+					<label class="description" for="element_11">Parent or Guardian 2 </label>
+					<span>
+						<input id="element_11_1" name= "element_11_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_11_2" name= "element_11_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>
+
+				<li id="li_12" >
+					<label class="description" for="element_12">Address </label>
+					
+					<div>
+						<input id="element_12_1" name="element_12_1" class="element text large" value="" type="text">
+						<label for="element_12_1">Street Address</label>
+					</div>
+				
+					<div>
+						<input id="element_12_2" name="element_12_2" class="element text large" value="" type="text">
+						<label for="element_12_2">Address Line 2</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_12_3" name="element_12_3" class="element text medium" value="" type="text">
+						<label for="element_12_3">City</label>
+					</div>
+				
+					<div class="right">
+						<input id="element_12_4" name="element_12_4" class="element text medium" value="" type="text">
+						<label for="element_12_4">State / Province / Region</label>
+					</div>
+				
+					<div class="left">
+						<input id="element_12_5" name="element_12_5" class="element text medium" maxlength="15" value="" type="text">
+						<label for="element_12_5">Postal / Zip Code</label>
+					</div>
+				
+					<div class="right">
+						<select class="element select medium" id="element_12_6" name="element_12_6"> 
+						<option value="" selected="selected"></option>
+
+						<option value="United States" >United States</option>
+
+				
+						</select>
+						<label for="element_12_6">Country</label>
+					</div> 
+				</li>
+
+				<div class="row phone">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_13" >
+							<label class="description" for="element_13">Daytime Phone </label>
+							<span>
+								<input id="element_13_1" name="element_13_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_13_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_13_2" name="element_13_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_13_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_13_3" name="element_13_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_13_3">####</label>
+							</span>
+						 
+						</li>		
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_14" >
+							<label class="description" for="element_14">Home Phone </label>
+							<span>
+								<input id="element_14_1" name="element_14_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_14_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_14_2" name="element_14_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_14_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_14_3" name="element_14_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_14_3">####</label>
+							</span>
+						 
+						</li>		
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_15" >
+							<label class="description" for="element_15">Cell Phone </label>
+							<span>
+								<input id="element_15_1" name="element_15_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_15_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_15_2" name="element_15_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_15_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_15_3" name="element_15_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_15_3">####</label>
+							</span>
+						</li>
+					</div>		
+				</div><!-- row -->
+
+				<li id="li_16" >
+					<label class="description" for="element_16">Email </label>
+					<div>
+						<input id="element_16" name="element_16" class="element text email" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li id="li_17" >
+					<label class="description r" for="element_17">Emergency Contact (if above can't be reached) </label>
+					<span>
+						<input id="element_17_1" name= "element_17_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_17_2" name= "element_17_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>		
+				<div class="row phone">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_18" >
+							<label class="description r" for="element_18">Daytime Phone </label>
+							<span>
+								<input id="element_18_1" name="element_18_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_18_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_18_2" name="element_18_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_18_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_18_3" name="element_18_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_18_3">####</label>
+							</span>
+						</li>
+					</div>		
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_19" >
+							<label class="description" for="element_19">Home Phone </label>
+							<span>
+								<input id="element_19_1" name="element_19_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_19_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_19_2" name="element_19_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_19_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_19_3" name="element_19_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_19_3">####</label>
+							</span>
+						</li>		
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_20" >
+							<label class="description r" for="element_20">Cell Phone </label>
+							<span>
+								<input id="element_20_1" name="element_20_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_20_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_20_2" name="element_20_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_20_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_20_3" name="element_20_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_20_3">####</label>
+							</span>
+						</li>
+					</div>		
+				</div><!-- row -->
+
+				<li id="li_21" >
+					<label class="description" for="element_21">Email </label>
+					<div>
+						<input id="element_21" name="element_21" class="element text email" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li id="li_22" >
+					<label class="description r" for="element_22">Emergency Contact 2 (if above can't be reached) </label>
+					<span>
+						<input id="element_22_1" name= "element_22_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_22_2" name= "element_22_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>		
+
+				<div class="row phone">
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_23" >
+							<label class="description r" for="element_23">Daytime Phone </label>
+							<span>
+								<input id="element_23_1" name="element_23_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_23_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_23_2" name="element_23_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_23_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_23_3" name="element_23_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_23_3">####</label>
+							</span>
+						</li>		
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_24" >
+							<label class="description" for="element_24">Home Phone </label>
+							<span>
+								<input id="element_24_1" name="element_24_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_24_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_24_2" name="element_24_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_24_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_24_3" name="element_24_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_24_3">####</label>
+							</span>
+						</li>		
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+						<li id="li_25" >
+							<label class="description r" for="element_25">Cell Phone </label>
+							<span>
+								<input id="element_25_1" name="element_25_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_25_1">(###)</label>
+							</span>
+							<span>
+								<input id="element_25_2" name="element_25_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+								<label for="element_25_2">###</label>
+							</span>
+							<span>
+						 		<input id="element_25_3" name="element_25_3" class="element text" size="4" maxlength="4" value="" type="text">
+								<label for="element_25_3">####</label>
+							</span>
+						</li>
+					</div>		
+				</div><!-- row -->
+
+				<li id="li_26" >
+					<label class="description" for="element_26">Email </label>
+					<div>
+						<input id="element_26" name="element_26" class="element text email" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li class="section_break">
+					<h3>Persons authorized to pick up your child from camp besides parent/guardian</h3>
+					<p></p>
+				</li>		
+
+				<li id="li_28" >
+					<label class="description" for="element_28">Name </label>
+					<span>
+						<input id="element_28_1" name= "element_28_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_28_2" name= "element_28_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>		
+
+				<li id="li_29" >
+					<label class="description" for="element_29">Relationship </label>
+					<div>
+						<input id="element_29" name="element_29" class="element text x-large" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li id="li_30" >
+					<label class="description" for="element_30">Name </label>
+					<span>
+						<input id="element_30_1" name= "element_30_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_30_2" name= "element_30_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>		
+
+				<li id="li_31" >
+					<label class="description" for="element_31">Relationship </label>
+					<div>
+						<input id="element_31" name="element_31" class="element text x-large" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li id="li_32" >
+					<label class="description" for="element_32">Name </label>
+					<span>
+						<input id="element_32_1" name= "element_32_1" class="element text x-large" maxlength="255" size="8" value=""/>
+						<label>First</label>
+					</span>
+					<span>
+						<input id="element_32_2" name= "element_32_2" class="element text x-large" maxlength="255" size="14" value=""/>
+						<label>Last</label>
+					</span> 
+				</li>		
+
+				<li id="li_33" >
+					<label class="description" for="element_33">Relationship </label>
+					<div>
+						<input id="element_33" name="element_33" class="element text x-large" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+
+				<li id="li_36" >
+					<label class="description r" for="element_36">By checking the box below you agree to allow Code Camp to use any photo or quote for publicity purposes. 
+					</label>
+					<span>
+						<input id="element_36_1" name="element_36_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_36_1">Photography Policy</label>
+					</span> 
+				</li>		
+
+				<li id="li_37" >
+					<label class="description r" for="element_37">By checking the box below you give permission for emergency medical treatment of your child for illness or accident if contacts listed can't be reached.
+					</label>
+					<span>
+						<input id="element_37_1" name="element_37_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_37_1">Emergency Medical Treatment</label>
+
+					</span> 
+				</li>		
+
+				<li id="li_38" >
+					<label class="description r" for="element_38">By checking the box below you give permission for your child to use the internet in accordance with Code Camp instructor guidelines. </label>
+					<span>
+						<input id="element_38_1" name="element_38_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_38_1">Internet Usage</label>
+
+					</span> 
+				</li>		
+
+				<li id="li_39" >
+					<label class="description r" for="element_39">Which camp will your child be attending? <br /></label>
+						<p class="level">Level 1 will be held at Christian Life Academy from June 22 - 26.</p>
+						<p class="level">Level 2 will be held at Sts. Peter and Paul from July 27 - 31.</p>
+						<div class="note">Level 1 is for beginner coders grades 5, 6 and 7.
+						Level 2 is for any child who has completed the Level 1 course.</div>
+						<div class="note">
+						If your child would like to complete both camps this summer please check both boxes.</div>
+					
+					<span>
+						<input id="element_39_1" name="element_39_1" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_39_1">Level 1</label>
+						<input id="element_39_2" name="element_39_2" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_39_2">Level 2</label>
+						<input id="element_39_3" name="element_39_3" class="element checkbox" type="checkbox" value="1" />
+						<label class="choice" for="element_39_3">Shirt for both Levels</label>
+						<div class="note">
+						If your child is attending both camps please check if you would like both t-shirts and please send another $12.00.</div>
+
+					</span>
+					<p class="guidelines" id="guide_39">
+
+					</p> 
+				</li>		
+
+				<li id="li_34" >
+					<label class="description r" for="element_34">By typing your name below you are signing this form and agree that all information is correct. </label>
+					<div>
+						<input id="element_34" name="element_34" class="element text x-large" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>
+					
+				<li class="buttons">
+					    <input type="hidden" name="form_id" value="1005101" />
+					    
+						<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+				</li>
+
+			</ul>
+
+		</form>
+
+		<div id="footer">
+			<a href="http://www.digigirls.org">DigiGirls Code Camp 2015</a>
+		</div><!-- footer -->
+
+	</div><!-- form container -->
+
+	</body>
+
+</html>

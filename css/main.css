@@ -1,0 +1,389 @@
+/*----------------------------------------------------------------------------- 
+=MAIN STYLES  
+-----------------------------------------------------------------------------*/
+.container {
+
+	background-color: white;
+}
+
+
+
+
+/*----------------------------------------------------------------------------- 
+=Marketing  
+-----------------------------------------------------------------------------*/
+
+.marketing .row {
+	text-align: center;	
+}
+
+.divider {
+  margin: 80px 0; 
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #AA00FF;
+  font-size: 4vmin;
+  font-family: 'Railway' , sans-serif;
+}
+
+.lead {
+	color: #FF00AA;
+}
+
+ .project-link{
+
+ 	color: #00AAFF;
+ 	font-size: 3vmin;
+ }
+
+.project-link a {
+
+	color: #AAFF00;
+}
+
+p {
+	font-family: 'Railway' , sans-serif;
+	font-size: 3vmin;
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=Carousel
+-----------------------------------------------------------------------------*/
+.banner {
+
+	margin-bottom: -30px;
+	margin-top: -25px;
+}
+
+
+.banner img {
+	 width: 100%;
+}
+
+
+.carousel-indicators {
+
+	margin-bottom: -10px;
+}
+
+.carousel-caption {
+
+	margin-bottom: -30px;
+
+}
+
+.banner h2 {
+	color: #FF00AA;
+	font-size: 4.5vw;
+	font-family: 'Droid Sans' , sans-serif;
+	text-shadow:
+    1px 0px 1px #ccc, 0px 1px 1px white;
+
+}
+
+footer {
+
+	padding: 40px;
+}
+
+/*----------------------------------------------------------------------------- 
+NAV 
+-----------------------------------------------------------------------------*/
+.navbar {
+	margin-bottom: 0; /* removes default excess margin */
+
+}
+
+.navbar-header img {
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+
+#navbar a {
+	background: white;
+	color: #FF00AA;
+	margin: 16px;
+	padding: 16px;
+	display: block;
+	font-size: 20px;
+	font-family: 'Lato' , sans-serif;
+
+
+}
+
+#navbar a:hover {
+	color: #AAFF00;
+	transition: color 0.2s ease-in;
+}
+
+.navbar-collapse ul li {
+	float: right;
+	list-style: none;
+}
+
+
+.email-button {
+
+	padding-right: 15px;
+	font-size: 20px;
+}
+
+.fa {
+	color: #00AAFF !important;
+}
+
+.email-button a {
+
+	color: #00AAFF !important;
+
+}
+
+.registration button {
+
+	min-height: 85px;
+	width: 65%;
+	font-family: 'Droid Sans' , sans-serif;
+	font-size: 8vmin;
+	background-color: #FF00AA;
+
+}
+
+.registration button a {
+
+	color: white;
+	text-decoration: none;
+
+}
+
+
+.dates {
+
+	color: #00AAFF;
+	font-family: 'Raleway' , sans-serif;
+	min-height: 155px;
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.level {
+
+	font-size: 3vmin;
+}
+
+.dates a {
+
+	text-decoration: none;
+	color: #00AAFF;
+}
+
+.dates a:hover {
+
+	color: #FF00AA;
+}
+
+/*---------------------------------------------------
+Photos
+-----------------------------------------------------*/
+
+.row li img{
+
+	height: 120px;
+	width: auto;
+}
+
+.row ul {    
+
+      padding:0 0 0 0;
+      margin:0 0 0 0;
+}
+.row ul li {  
+
+      list-style:none;
+      margin-bottom:25px;           
+}
+.row ul li img {
+
+      cursor: pointer;
+}
+
+
+.photo-container {
+
+	margin-top: 5%;
+}
+
+.photo-container li {
+
+	list-style: none!important;
+	margin-bottom: 15px;
+
+}
+
+.photo-container h2 {
+
+	padding-left: 45px;
+	color: #AAFF00;
+	font-family: 'Droid Sans' , sans-serif;
+	font-size: 35px;
+}
+
+#links a {
+
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+#links {
+
+	margin-top: 5%;
+}
+
+#links h2 {
+
+	padding-left: 25px;
+	color: #AAFF00;
+	font-family: 'Droid Sans' , sans-serif;
+	font-size: 35px;
+}
+
+/*----------------------------------------------------------
+maps
+_________________________________________________________*/
+
+.maps {
+
+	margin-left: 50px;
+	margin-top: 5%;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+
+iframe {
+
+	padding: 25px;
+	padding-left: 45px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80% !important;
+    height: 80% !important;
+}
+
+.maps h2 {
+
+	font-size: 25px;
+	color: #00AAFF;
+	padding-left: 20px;
+	padding-right: 65px;
+	margin-right: 25px;
+	text-align: center;
+}
+
+.contact {
+	padding-top: 85px;
+	background-image: linear-gradient(white, #AAFF00, white);
+	padding-bottom: 85px;
+
+}
+
+.maps a {
+
+	color: #AA00FF;
+	text-decoration: none;
+}
+
+.maps a:hover {
+
+	color: #FF00AA;
+}
+
+.contact h1 {
+
+	color: #AA00FF;
+	padding-left: 25px;
+	text-align: center;
+}
+
+.contact h2 {
+
+	color: #FF00AA;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.contact h3 {
+
+	color: : #FF00AA;
+	font-size: 15px;
+	text-align: center;
+}
+
+.image {
+
+	text-align: center;
+}
+
+.photo-container {
+
+	margin-right: 18px;
+}
+
+.photo-container .project img {
+
+	width: 90%;
+	height: auto;
+	margin-top: 10%;
+}
+
+.photo-container a {
+
+	width: 100%;
+}
+.photo-container span {
+
+	margin-bottom: 15px;
+	font-size: 1.5em;
+	font-family: 'Raleway', serif;
+	color: #FF00AA;
+	margin-top: -5px;
+}
+
+.submit {
+
+	padding-top: 55px;
+	padding-bottom: 55px;
+	padding-right: 25px;
+	padding-left: 25px;
+
+}
+
+.submit h1 {
+
+	color: #FF00AA;
+	font-size: 9vmin;
+	font-family: 'Raleway', sans-serif;
+}
+
+.submit h2 {
+
+	color: #BA01FF;
+	font-size: 6vimn;
+	font-family: 'Roboto', sans-serif;
+}

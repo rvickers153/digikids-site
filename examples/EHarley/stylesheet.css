@@ -1,0 +1,39 @@
+h1{
+	color:blue;
+	text-align: center;
+	font-family: vivaldi;
+
+font-size:75px;
+}
+
+body{
+	background-color: #FFD801;
+
+}
+
+p{
+
+font-size:50px;
+text-align:center;
+margin:0 auto;
+}
+div{
+	text-align:center;
+	margin:0 auto;
+	height: 250px;
+}
+p{
+
+}
+
+a {
+	text-align: center;
+	margin:0 auto;
+	font-size:50px;
+
+}
+img{
+	height: 250px;
+	text-align: center;
+	margin: 0 auto;
+}

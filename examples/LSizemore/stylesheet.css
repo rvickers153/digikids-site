@@ -1,0 +1,155 @@
+img {
+
+	width: 150px;
+}
+
+
+body{
+
+background-color:#FF00FF ;
+border: 10px dashed #008080;
+
+} 
+
+.pusheen{
+	width: 350px;
+}
+
+.cat{
+	width:200px;
+}
+
+.cow{
+	width:350px;
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+.father{
+	width:200px;
+}
+
+h3{
+	font-family:cursive;
+	color: #FFFF00;
+	background-color: #6A5ACD;
+
+}
+
+title{
+	background-color: #EE82EE;
+
+}
+
+h1{
+	background-color: #00FFFF;
+	font-family: 'Indie Flower', cursive;
+	color:#FFFF00;
+	text-align: center;
+}
+
+.section{
+	margin-left: 15px;
+}
+
+
+a{
+	background-color: #FFFF00;
+
+}
+
+
+.tar{
+	width:250px;
+}
+
+
+.cow {
+
+	text-align: center;
+	margin: 0 auto;
+}
+
+.cow img {
+	width: 350px;
+}
+
+h2{
+
+	background-color:#B22222;
+	color:#00FA9A;
+	font-family: Latin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

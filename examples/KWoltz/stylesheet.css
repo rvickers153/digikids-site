@@ -1,0 +1,22 @@
+h1 {
+	color:#A23BEC;
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+	font-family: 'Sigmar One', cursive;
+	font-size: 50px;
+}
+body{
+	background-color:#9AFEFF;
+}
+p{
+	color:#FF0000;
+}
+img {
+	height: 250px;
+	text-align: center;
+	margin: 0 auto;
+}
+div{
+	text-align: center;
+	margin: 0 auto;

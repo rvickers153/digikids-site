@@ -1,0 +1,15 @@
+body{
+    background-color: #FFD700;
+	color: green;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+}
+
+a {
+	font-size: 25px;
+}
+
+iframe {
+	text-align:center;
+	margin: 0 auto;
+}

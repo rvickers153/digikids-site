@@ -1,0 +1,31 @@
+body{ 
+	/*this color is lemon*/
+	background-color:#FAFAD2;
+	font-family:Verdana;
+
+}
+/*this is navy*/
+h1{
+color:#000080;
+}
+p{
+color:#000080;
+}
+h2 {
+	color:#000080;
+}
+h3 {
+	color:#000080;
+
+}
+
+img {
+    height: 300px;
+	width: 300px;
+
+}
+nav div {
+	height: 25px;
+	width: 300px;
+	background-color: #FAFAD2;
+}
